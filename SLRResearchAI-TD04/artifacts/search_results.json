@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0",
+  "origin": "TD03",
+  "topic": "Utilisation des LLM pour assister le screening des SLR en génie logiciel",
+  "created_at": "2026-10-12T05:36:55.042279+00:00",
+  "pedagogical_fixture": false,
+  "note": "Instantané réel généré par le SearchAgent ReAct contrôlé du TD03 : OpenAlex et Crossref réussis, Semantic Scholar limité par HTTP 429.",
+  "search": {
+    "queries": {
+      "openalex": "(\"systematic review screening\" AND \"large language models\") OR (\"study selection\" AND \"LLM\") OR (\"title and abstract screening\" AND \"generative AI\")",
+      "crossref": "(\"systematic review screening\" AND \"large language models\") OR (\"study selection\" AND \"LLM\") OR (\"title and abstract screening\" AND \"generative AI\")",
+      "semantic_scholar": "(\"systematic review screening\" AND \"large language models\") OR (\"study selection\" AND \"LLM\") OR (\"title and abstract screening\" AND \"generative AI\")"
+    },
+    "sources_attempted": [
+      "openalex",
+      "crossref",
+      "semantic_scholar"
+    ],
+    "stop_reason": "agent_finish",
+    "raw_results": 16,
+    "unique_results": 16
+  },
+  "papers": [
+    {
+      "id": "W4410813691",
+      "title": "Do it faster with PICOS: Generative AI-Assisted systematic review screening",
+      "abstract": "",
+      "doi": "https://doi.org/10.1016/j.jbi.2025.104860",
+      "source": "openalex",
+      "url": "https://doi.org/10.1016/j.jbi.2025.104860",
+      "open_access": false
+    },
+    {
+      "id": "W4417479740",
+      "title": "SA18 Calibrating Large Language Model Probabilities to Achieve Target Recall in Systematic Review Screening",
+      "abstract": "",
+      "doi": "https://doi.org/10.1016/j.jval.2025.09.2960",
+      "source": "openalex",
+      "url": "https://doi.org/10.1016/j.jval.2025.09.2960",
+      "open_access": false
+    },
+    {
+      "id": "W4410000915",
+      "title": "Large Language Models in Systematic Review Screening: Opportunities, Challenges, and Methodological Considerations",
+      "abstract": "Large Language Models (LLMs) have recently emerged as a powerful option for partially automating the labor-intensive process of screening articles in systematic reviews. Unlike traditional semi-automated platforms that rely on iterative human feedback, LLM-based pipelines can operate in a zero-shot or few-shot manner, classifying abstracts according to predefined criteria. This paper offers a step-by-step methodology for researchers, librarians, and students seeking to incorporate LLMs—such as GPT-4—into systematic reviews. It discusses required software and data preprocessing, presents various prompt strategies, and emphasizes the importance of human oversight to maintain rigorous quality control. The proposed framework aims to provide best practices and offer guidance on managing costs, reproducibility, and prompt refinement. By following these guidelines, review teams can substantially reduce screening workloads without compromising the comprehensive nature of evidence-based research.",
+      "doi": "https://doi.org/10.3390/info16050378",
+      "source": "openalex",
+      "url": "https://www.mdpi.com/2078-2489/16/5/378/pdf?version=1746089910",
+      "open_access": true
+    },
+    {
+      "id": "W4402635906",
+      "title": "Leveraging large language models for systematic reviewing: A case study using HIV medication adherence research",
+      "abstract": "Background The rapidly accumulating scientific literature in HIV presents a significant challenge in accurately and efficiently assessing the relevant literature. This study explores the potential capabilities of using large language models (LLMs), such as ChatGPT, for selecting relevant studies for a systematic review. Method Scientific papers were initially obtained from bibliographic database searches using a Boolean search strategy with pre-defined keywords. From 15,839 unique records, three reviewers manually identified 39 relevant papers based on pre-specified inclusion and exclusion criteria. In the ChatGPT experiment, over 10% of records were randomly chosen as the experimental dataset, including the 39 manually identified manuscripts. These unique records (n=1,680) underwent screening via ChatGPT-4 using the same prespecified criteria. Four strategies were employed including standard prompting, i.e., input-output (IO), chain of thought with zero-shot learning (0-CoT), CoT with few-shot learning (FS-CoT), and Majority Voting (which integrates all three promoting strategies). Performance of the models were assessed using recall, F-score, and precision measures. Results Recall scores (% of true abstracts successfully identified and retrieved by the model from all input data/records) for different ChatGPT configurations were 0.82 (IO), 0.97 (0-CoT), and both the FS-CoT and the Majority Voting prompts achieved a recall score of 1.0. F-scores were 0.34 (IO), 0.29 (0-CoT), 0.39 (FS-CoT), and 0.46 (majority voting). Precision measures were 0.22(IO), 0.17(0-CoT), 0.24(FS-CoT), and 0.30 (Majority Voting). Computational time varied with 2.32, 4.55, 6.44, and 13.30 hours for IO, 0-CoT, FS-CoT, and majority voting,respectively. Processing costs for the 1,680 unique records were approximately $63, $73, $186, and $325, respectively. Conclusion LLMs, like ChatGPT, are viable for systematic reviews, efficiently identifying studies meeting pre-specified criteria. Greater efficacy was observed when a more sophisticated prompt design was employed, integrating IO, 0-CoT and FS-CoT prompt techniques (i.e., majority voting). LLMs can expedite the study selection process in systematic reviews compared to manual methods, with minimal cost implications.",
+      "doi": "https://doi.org/10.1101/2024.09.18.24313828",
+      "source": "openalex",
+      "url": "https://www.medrxiv.org/content/medrxiv/early/2024/09/19/2024.09.18.24313828.full.pdf",
+      "open_access": true
+    },
+    {
+      "id": "W7204588067",
+      "title": "Evaluating human and LLM screening workflows in a conceptually complex scoping review: Recall--workload trade-offs and run-to-run consistency",
+      "abstract": "Background. Large language models (LLMs) are increasingly used for screening in evidence synthesis, where false negatives can remove relevant studies before full-text assessment. We compared human and LLM title-and-abstract screening workflows in a preregistered study embedded in a conceptually complex scoping review. Methods. After a conservative title-only screen, 1,131 records were screened by one review lead, four trained assistants screening non-overlapping subsets, and seven complete LLM runs using different models and processing configurations, including a nominally identical repeat run. We compared retained workload, operational recall against 316 verified eligible records, agreement, run-to-run consistency, and procedural burden. Because eligibility was verified only for records advanced and assessed in the parent review, recall estimates were operational. Results. No workflow recovered all verified eligible records. The human workflows and two GPT-5.4 file-batch runs retained 42.2-45.0% of records while achieving 82.3-82.9% recall. Gemini 3.1 file batches achieved the highest recall (83.9%) but retained 56.7% of records. All-at-once configurations recovered fewer eligible records than corresponding file-batch configurations. Two nominally identical GPT-5.4 file-batch runs agreed on 91.7% of records but differed on 94 records, including 29 verified eligible records retained by only one run. Discussion. LLM screening performance depended on the implemented workflow, not model identity alone. Processing configuration, workload, record-level variation, and human-LLM decision integration are therefore substantive properties of deployed systems. For high-recall tasks, LLMs are better suited to validated, auditable, human-supervised workflows than autonomous exclusion.",
+      "doi": "https://doi.org/10.48550/arxiv.2608.26885",
+      "source": "openalex",
+      "url": "https://arxiv.org/pdf/2608.26885",
+      "open_access": true
+    },
+    {
+      "id": "W7164542135",
+      "title": "Using full agreement across multiple large language models for title-and-abstract screening in systematic reviews: a proof-of-concept",
+      "abstract": "BACKGROUND: The exponential growth of scientific literature poses significant challenges for conducting systematic reviews, particularly in the labor-intensive title-and-abstract screening phase. This study examines the feasibility of using multiple large language models (LLMs) for title-and-abstract screening in systematic reviews. METHODS: We propose and evaluate a full-agreement approach using three commercially available LLMs from different model families (ChatGPT, Gemini, and Claude), in which automated classification decisions are only accepted when all three models assign the same label. This approach was examined across six datasets to assess its effectiveness. A structured workflow was developed to support implementation without requiring specialized technical expertise. Additionally, a stop criterion was introduced to ensure that LLM-based classification is only applied when predefined performance thresholds are met. RESULTS: Across the six datasets, approximately four in five abstracts received full agreement across models and could therefore be classified automatically. For this subset of abstracts, classification performance was consistently higher than that of previous automated approaches using LLMs, with statistically significant improvements in all prespecified performance metrics. CONCLUSIONS: A full agreement approach across three LLMs may offer a promising and conservative strategy for title-and-abstract screening in systematic reviews by automating concordant decisions while reserving human review for discordant cases. As a proof-of-concept, the present findings support this approach as a possible workflow for reducing screening burden in the face of continued growth in the scientific literature, although its broader generalizability remains to be established.",
+      "doi": "https://doi.org/10.1186/s13643-026-03228-4",
+      "source": "openalex",
+      "url": "https://link.springer.com/content/pdf/10.1186/s13643-026-03228-4.pdf",
+      "open_access": true
+    },
+    {
+      "id": "W4409709722",
+      "title": "Testing the utility of GPT for title and abstract screening in environmental systematic evidence synthesis",
+      "abstract": "In this paper we show that OpenAI's Large Language Model (LLM) GPT perform remarkably well when used for title and abstract eligibility screening of scientific articles and within a (systematic) literature review workflow. We evaluated GPT on screening data from a systematic review study on electric vehicle charging infrastructure demand with almost 12,000 records using the same eligibility criteria as human screeners. We tested 3 different versions of this model that were tasked to distinguishing between relevant and irrelevant content by responding with a relevance probability between 0 and 1. For the latest GPT-4 model (tested in November 2023) and probability cutoff 0.5 the recall rate is 100%, meaning no relevant papers were missed and using this mode for screening would have saved 50% of the time that would otherwise be spent on manual screening. Experimenting with a higher cut of threshold can save more time. With threshold chosen so that recall is still above 95% for GPT-4 (where up to 5% of relevant papers might be missed), the model could save 75% of the time spent on manual screening. If automation technologies can replicate manual screening by human experts with effectiveness, accuracy, and precision, the work and cost savings are significant. Furthermore, the value of a comprehensive list of relevant literature, rather quickly available at the start of a research project, is hard to understate. However, as this study only evaluated the performance on one systematic review and one prompt, we caution that more test and methodological development is needed, and outline the next steps to properly evaluate rigor and effectiveness of LLMs for eligibility screening.",
+      "doi": "https://doi.org/10.1186/s13750-025-00360-x",
+      "source": "openalex",
+      "url": "https://environmentalevidencejournal.biomedcentral.com/counter/pdf/10.1186/s13750-025-00360-x",
+      "open_access": true
+    },
+    {
+      "id": "W7167845277",
+      "title": "From Manual to LLM Assisted Screening in PRISMA: A Two-Stage Binary Classification Workflow for Large Scale Systematic Reviews",
+      "abstract": "",
+      "doi": "https://doi.org/10.1007/978-3-032-30877-1_51",
+      "source": "openalex",
+      "url": "https://doi.org/10.1007/978-3-032-30877-1_51",
+      "open_access": false
+    },
+    {
+      "id": "10.64898/2026.09.25.26364021",
+      "title": "Title and abstract screening for systematic reviews with Jev, a System One model: comparison with generative large language models",
+      "abstract": "Abstract Large language models (LLMs) screen titles and abstracts without review-specific training, but generating screening decisions as text takes processing time and incurs API charges. We evaluated Jev, a non-generative model returning classification probabilities, on 4527 records from two systematic reviews of bipolar disorder treatments. We used human reviewers’ decisions to retain records for full-text assessment as the reference standard. In the primary analysis, we asked Jev yes-or-no questions (“Noul”) about whether to retain each record. Records were retained when their retention probability was at least 50%, a cutoff specified before the final evaluation runs. We also evaluated lower retention thresholds. For comparison, we gave Jev explicit include/exclude options (“Choice”) and used the same prompts with GPT-5 mini and GPT-6 Astra; both LLMs used default reasoning. In the primary analysis at 50%, sensitivity and specificity were 99.6% and 98.9% for light therapy and 93.2% and 93.5% for adjunctive pharmacotherapy. Lower cutoffs selected on these data retained all reference-positive records. Compared with assessing every record manually, these cutoffs reduced the number requiring human assessment by 96.9% for light therapy and 61.3% for adjunctive pharmacotherapy. For light therapy and adjunctive pharmacotherapy, sensitivity was 92.3% and 90.0% with Jev using explicit options at 50%, 87.2% and 90.0% with GPT-5 mini, and 92.3% and 80.8% with GPT-6 Astra. Costs for screening all 4527 records once were US$0.20 for Jev using explicit options, US$2.59 for GPT-5 mini, and US$33.45 for GPT-6 Astra. Jev’s probabilities could provide graded information for reviewers assessing titles and abstracts. Highlights What is already known Generative LLMs can screen titles and abstracts using natural-language eligibility criteria, but generating each decision takes time and incurs API charges. What is new Jev screened records without generating text or requiring training on records labeled for each review. In two reviews, screening cost substantially less than with the tested LLM configurations. Potential impact for Research Synthesis Methods readers Rather than providing only an include-or-exclude decision, Jev indicates how strongly the model favors retaining each record. Reviewers could consider this information alongside the title, abstract, and eligibility criteria.",
+      "doi": "10.64898/2026.09.25.26364021",
+      "source": "crossref",
+      "url": "https://doi.org/10.64898/2026.09.25.26364021",
+      "open_access": true
+    },
+    {
+      "id": "10.22541/au.174897561.15670282/v1",
+      "title": "Validation of Generative AI Models to Expedite Title and Abstract Screening in Systematic Reviews",
+      "abstract": "Introduction Systematic literature reviews (SLRs) are a vital aspect of evidence-based research, directing healthcare decisions and impacting policymaking-specific issues, however, the traditional process of conducting them could be lengthy, labor-intensive, and costly. This augments the need for more efficient strategies, such as automation using generative artificial intelligence (AI), which could help the researchers reduce their workload and streamline the SLR process. The current study investigates the relative efficiency of the generative AI models (Claude Sonnet 3.5, Gemini Flash 1.5, and GPT-4) in the title and abstract screening phase of SLRs. Methods Key biomedical databases, including Embase ® , Medline ® , and Cochrane, were searched to identify relevant randomised controlled trials in patients with schizophrenia. This study presented a hybrid approach for systematic reviews, where one reviewer is a human expert and the other leverages three large language models (LLM). A subject matter expert in conducting SLRs, optimized and fine-tuned the final prompt, delivered through a Python application programming interface, to identify evidence meeting key inclusion and exclusion criteria. The screening results obtained from one human reviewer and three AI models were reviewed by subject matter expert (SME). AI models’ performance was evaluated using metrics such as accuracy, sensitivity, specificity, and precision to assess their success in identifying publications included in the final SLR. Results All three AI models performed exceptionally well in screening based on titles and abstracts. While there were no significant differences in accuracy rates, Gemini Flash 1.5 exhibited the highest accuracy rate at 96.02%, followed by GPT-4 (95.00%) and Claude Sonnet 3.5 (94.69%). In terms of sensitivity, GPT-4 exhibited better results, attaining 95.97% of sensitivity, followed by 94.63% with Gemini Flash 1.5, and 88.59% with Claude Sonnet 3.5. Among the AI models evaluated, GPT demonstrated highest concordance with the human reviewer at 88.77%, followed closely by Gemini Flash at 86.63% and Claude Sonnet at 85.81%, indicating a consistently high level of agreement across all models.",
+      "doi": "10.22541/au.174897561.15670282/v1",
+      "source": "crossref",
+      "url": "https://doi.org/10.22541/au.174897561.15670282/v1",
+      "open_access": false
+    },
+    {
+      "id": "10.1016/j.jval.2024.10.3097",
+      "title": "SA16 Automating Systematic Literature Review Abstract Screening Using Large Language AI Models: A Development and Validation Study",
+      "abstract": "",
+      "doi": "10.1016/j.jval.2024.10.3097",
+      "source": "crossref",
+      "url": "https://doi.org/10.1016/j.jval.2024.10.3097",
+      "open_access": true
+    },
+    {
+      "id": "10.1201/9788743808145-5",
+      "title": "LLM – Large Language Models",
+      "abstract": "",
+      "doi": "10.1201/9788743808145-5",
+      "source": "crossref",
+      "url": "https://doi.org/10.1201/9788743808145-5",
+      "open_access": false
+    },
+    {
+      "id": "10.1186/s13643-026-03228-4",
+      "title": "Using full agreement across multiple large language models for title-and-abstract screening in systematic reviews: a proof-of-concept",
+      "abstract": "Abstract Background The exponential growth of scientific literature poses significant challenges for conducting systematic reviews, particularly in the labor-intensive title-and-abstract screening phase. This study examines the feasibility of using multiple large language models (LLMs) for title-and-abstract screening in systematic reviews. Methods We propose and evaluate a full-agreement approach using three commercially available LLMs from different model families (ChatGPT, Gemini, and Claude), in which automated classification decisions are only accepted when all three models assign the same label. This approach was examined across six datasets to assess its effectiveness. A structured workflow was developed to support implementation without requiring specialized technical expertise. Additionally, a stop criterion was introduced to ensure that LLM-based classification is only applied when predefined performance thresholds are met. Results Across the six datasets, approximately four in five abstracts received full agreement across models and could therefore be classified automatically. For this subset of abstracts, classification performance was consistently higher than that of previous automated approaches using LLMs, with statistically significant improvements in all prespecified performance metrics. Conclusions A full agreement approach across three LLMs may offer a promising and conservative strategy for title-and-abstract screening in systematic reviews by automating concordant decisions while reserving human review for discordant cases. As a proof-of-concept, the present findings support this approach as a possible workflow for reducing screening burden in the face of continued growth in the scientific literature, although its broader generalizability remains to be established.",
+      "doi": "10.1186/s13643-026-03228-4",
+      "source": "crossref",
+      "url": "https://doi.org/10.1186/s13643-026-03228-4",
+      "open_access": true
+    },
+    {
+      "id": "10.1186/s13643-024-02575-4",
+      "title": "Title and abstract screening for literature reviews using large language models: an exploratory study in the biomedical domain",
+      "abstract": "Abstract Background Systematically screening published literature to determine the relevant publications to synthesize in a review is a time-consuming and difficult task. Large language models (LLMs) are an emerging technology with promising capabilities for the automation of language-related tasks that may be useful for such a purpose. Methods LLMs were used as part of an automated system to evaluate the relevance of publications to a certain topic based on defined criteria and based on the title and abstract of each publication. A Python script was created to generate structured prompts consisting of text strings for instruction, title, abstract, and relevant criteria to be provided to an LLM. The relevance of a publication was evaluated by the LLM on a Likert scale (low relevance to high relevance). By specifying a threshold, different classifiers for inclusion/exclusion of publications could then be defined. The approach was used with four different openly available LLMs on ten published data sets of biomedical literature reviews and on a newly human-created data set for a hypothetical new systematic literature review. Results The performance of the classifiers varied depending on the LLM being used and on the data set analyzed. Regarding sensitivity/specificity, the classifiers yielded 94.48%/31.78% for the FlanT5 model, 97.58%/19.12% for the OpenHermes-NeuralChat model, 81.93%/75.19% for the Mixtral model and 97.58%/38.34% for the Platypus 2 model on the ten published data sets. The same classifiers yielded 100% sensitivity at a specificity of 12.58%, 4.54%, 62.47%, and 24.74% on the newly created data set. Changing the standard settings of the approach (minor adaption of instruction prompt and/or changing the range of the Likert scale from 1–5 to 1–10) had a considerable impact on the performance. Conclusions LLMs can be used to evaluate the relevance of scientific publications to a certain review topic and classifiers based on such an approach show some promising results. To date, little is known about how well such systems would perform if used prospectively when conducting systematic literature reviews and what further implications this might have. However, it is likely that in the future researchers will increasingly use LLMs for evaluating and classifying scientific publications.",
+      "doi": "10.1186/s13643-024-02575-4",
+      "source": "crossref",
+      "url": "https://doi.org/10.1186/s13643-024-02575-4",
+      "open_access": true
+    },
+    {
+      "id": "10.1186/s13643-026-03199-6",
+      "title": "Comparing supervised machine learning and large language models in title-abstract screening",
+      "abstract": "Abstract Background Systematic reviews require reviewers to decide on the eligibility of large numbers of articles derived from database searches. To accelerate review conduct while continuously more literature gets published, past studies proposed automating the title/abstract-screening step by either supervised machine learning or large language models. Because prior studies mainly compared results within the same model family, we directly compared common TF-IDF-based supervised baselines and a zero-shot, criteria-prompted, and open-weight large language model on the same data to discuss whether, and in which scenarios, they are feasible for review screening automation. Methods We predicted the eligibility of labeled articles by four supervised machine learning models (Naïve Bayes, support vector machine, random forest, logistic regression) and one large language model (Llama-3.1—8B-Instruct). Articles were labeled with eligibility as decided by human reviewers in six systematic reviews. We evaluated the performance by binary confusion matrices and calculated recall, specificity, precision, F1-score, and accuracy over a thousand bootstrap samples each. We compared these results to a reported performance of 0.86 (recall) and 0.79 (specificity) in single human reviewers. Results Model performance varies greatly between the data sets. Except for Naïve Bayes, recall and specificity are closer aligned in the supervised machine learning models compared to llama. Averaged across all datasets, llama matches human recall and the Naïve Bayes classifier exceeds it, while both fall behind human specificity. Conversely, logistic regression, random forest and support vector machine fall behind human recall while all three exceed human specificity. Conclusions Both supervised machine learning and large language models achieve recalls close to or above those of human reviewers. The supervised machine learning models achieve a higher harmonic mean of recall and specificity, while the llama model is more sensitive. Considering the reliance on training data and the all-or-nothing automation with supervised machine learning, this study’s results warrant their use in the extension of pre-existing, non-critical, systematic reviews. Contrarily, as large language models decide on articles individually and as they provide comprehensive, discussable, reasoning they may be used in tandem with human reviewers while the performance of ensembles of large language models is yet to be analyzed.",
+      "doi": "10.1186/s13643-026-03199-6",
+      "source": "crossref",
+      "url": "https://doi.org/10.1186/s13643-026-03199-6",
+      "open_access": true
+    },
+    {
+      "id": "10.1109/fllm67465.2025.11391208",
+      "title": "Fair and Scalable Resume Screening Using Generative AI",
+      "abstract": "",
+      "doi": "10.1109/fllm67465.2025.11391208",
+      "source": "crossref",
+      "url": "https://doi.org/10.1109/fllm67465.2025.11391208",
+      "open_access": true
+    }
+  ]
+}
